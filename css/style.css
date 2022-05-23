@@ -42,6 +42,7 @@ a {text-decoration:none !important}
 .container{padding-top:72px;min-height:100%;}
 .content{width:300px;margin:0 auto;padding-bottom:40px;}
 .keypad{
+  display:none;
   padding: 17.5px 52.5px;
   border-radius: 15px;
   background-color: #f7f7f7;
@@ -225,5 +226,8 @@ footer .banner{
   }
   footer .btn_footer{
     padding:17px 34px;
+  }
+  .keypad{
+    display:block;
   }
 }
