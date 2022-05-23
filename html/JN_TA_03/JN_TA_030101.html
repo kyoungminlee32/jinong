@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>농가정보 | JINONG</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>(컨설턴트)님</div>
+			<button type="button" class="userAdmin"><span class="blind">시스템관리자</span></button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<h3 class="titH3">농가정보</h3>
+			<table class="table tbTypeList  tbFixed mt5">
+				<colgroup>
+					<col width="200">
+					<col width="*">
+					<col width="200">
+					<col width="*">
+				</colgroup>
+				<caption></caption>
+				<tbody>
+					<tr>
+						<th>이름</th>
+						<td>김지농</td>
+						<th>이메일</th>
+						<td>kim1234@gmail.com</td>
+					</tr>
+					<tr>
+						<th>생년월일</th>
+						<td>1965.07.23</td>
+						<th>연락처</th>
+						<td>010-4321-5678</td>
+					</tr>
+					<tr>
+						<th>주소</th>
+						<td colspan="3">전남 담양군 금성면 대성 양지길 12-30 </td>
+					</tr>
+					<tr>
+						<th>농장명</th>
+						<td><input type="text" class="inputTxt w100"></td>
+						<th>품종</th>
+						<td>
+							<select class="select">
+								<option selected>딸기</option>
+								<option>option 1</option>
+								<option>option 2</option>
+								<option>option 3</option>
+							</select>
+						</td>
+					</tr>
+					<tr>
+						<th>필지주소</th>
+						<td colspan="3">
+							<input type="text" class="inputTxt w80" value="충남 논산시 강경읍 대흥로5번길 20" readonly>
+							<button class="btn btnTable">주소검색</button>
+						</td>
+					</tr>
+					<tr>
+						<th>작기시작일자</th>
+						<td><input type="date" name="" class="inputDate w100" value="2022-01-17" ></td>
+						<th>작기종료일자</th>
+						<td><input type="date" name="" class="inputDate w100" value="2022-01-17" ></td>
+					</tr>
+					<tr>
+						<th>재배유형</th>
+						<td><input type="text" class="inputTxt w100"></td>
+						<th>배지종류</th>
+						<td><input type="text" class="inputTxt w100"></td>
+					</tr>
+					<tr>
+						<th>자가퇴비여부</th>
+						<td><input type="text" class="inputTxt w100"></td>
+						<th>종묘확보방법</th>
+						<td><input type="text" class="inputTxt w100"></td>
+					</tr>
+					<tr>
+						<th>첫 수확일자</th>
+						<td><input type="date" name="" class="inputDate w100" value="2022-01-17" ></td>
+						<th>최종수확일자</th>
+						<td><input type="date" name="" class="inputDate w100" value="2022-01-17" ></td>
+					</tr>
+					<tr>
+						<th>병해충 방제횟수</th>
+						<td><input type="text" class="inputTxt w100"></td>
+						<th>병해충 발생정도</th>
+						<td><input type="text" class="inputTxt w100"></td>
+					</tr>
+					<tr>
+						<th>장비번호</th>
+						<td><input type="text" class="inputTxt w100"></td>
+						<th>도입일자</th>
+						<td><input type="date" name="" class="inputDate w100" value="2022-01-17" ></td>
+					</tr>
+					<tr>
+						<th>LTE번호</th>
+						<td><input type="text" class="inputTxt w100"></td>
+						<th></th>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+			<div class="btnAreaC">
+				<button type="button" class="btn btnType02">목록</button>
+				<button type="button" class="btn btnType01">저장</button>
+			</div>
+		</div><!-- //.content -->
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+<script type="text/javascript">
+var table = $("#myTable").DataTable({
+	
+});
+</script>
+
+</body>
+</html> 

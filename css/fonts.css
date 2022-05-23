@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+*{
+    font-family:'Noto Sans','Apple SD Gothic Neo','맑은고딕','MalgunGothic', 'AppleGothic', sans-serif;
+}
+
+@font-face{
+    font-family:'Noto Sans';
+    font-style: normal;
+    font-weight: 400;
+	src:url('../fonts/NotoSansKR-Regular.otf') format('opentype'),
+	url('../fonts/NotoSansKR-Regular.woff') format('woff'),
+	url('../fonts/NotoSansKR-Regular.woff2') format('woff2'),
+	url('../fonts/NotoSansKR-Regular.ttf') format('truetype');
+}
+@font-face{
+    font-family:'Noto Sans';
+    font-style: normal;
+    font-weight: 500;
+	src:url('../fonts/NotoSansKR-Medium.otf') format('opentype'),
+	url('../fonts/NotoSansKR-Medium.woff') format('woff'),
+	url('../fonts/NotoSansKR-Medium.woff2') format('woff2'),
+	url('../fonts/NotoSansKR-Medium.ttf') format('truetype');
+}

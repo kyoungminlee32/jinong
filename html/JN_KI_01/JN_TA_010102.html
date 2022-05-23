@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>A/S관리 | JINONG</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>(컨설턴트)님</div>
+			<button type="button" class="userAdmin"><span class="blind">시스템관리자</span></button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<h3 class="titH3">홈</h3>
+			<button type="button" class="btn btnTable" onclick="popup.open('#pop1', this)">농가특이 사항</button>
+		</div><!-- //.content -->
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+
+
+<div class="popupWrap" role="dialog" id="pop1">
+	<div class="popupContainer">
+		<div class="popupInner" style="width:480px">
+			<div class="popupHeader">
+				<div class="popTitle">농가 특이사항</div>
+				<div class="popClose">
+					<button class="btn_pop_close" onclick="popup.close('#pop1', this)"></button>
+				</div>
+			</div>
+			<div class="popupContent">
+				<div class="jsTabWrap">
+					<div class="pop_report_area">
+						<ul class="jstabMenu tabType04">
+							<li><button type="button" data-tab-link="tab01" class="active">환경</button></li>
+							<li><button type="button" data-tab-link="tab02">장애</button></li>
+							<li><button type="button" data-tab-link="tab03">컨설팅</button></li>
+							<li><button type="button" data-tab-link="tab04">병해충</button></li>
+						</ul>
+						<div class="pop_report_info">16 농가 실시간 환경정보</div>
+					</div>
+					<!-- 탭 농장별 시작 -->
+					<div class="tabContent active" data-tab-cont="tab01">
+						<div class="wrap_report_detail">
+							<ul class="report_detail_farm">
+								<li><button type="button" class="btn">김은성 농가</button></li>
+								<li><button type="button" class="btn active">고동진 농가</button></li>
+								<li><button type="button" class="btn">양민수 농가</button></li>
+								<li><button type="button" class="btn">조성민 농가</button></li>
+								<li><button type="button" class="btn">박철규 농가</button></li>
+								<li><button type="button" class="btn">양민수 농가</button></li>
+								<li><button type="button" class="btn">조성민 농가</button></li>
+								<li><button type="button" class="btn">박철규 농가</button></li>
+							</ul>
+							<ul class="report_detail_cont">
+								<li>온도 (22.40) 2021-12-03 11:02:24.0</li>
+								<li>습도 (83.80) 2021-12-03 11:02:24.0</li>
+								<li>CO2 (771.00) 2021-12-03 11:02:24.0</li>
+								<li>토양온도 (18.00) 2021-12-03 11:02:24.0</li>
+								<li>외부온도센서 (8.40) 2021-12-03 11:02:24.0</li>
+								<li>기타습도센서 (70.80) 2021-12-03 11:02:24.0</li>
+								<li>일사센서 (263.39) 2021-12-03 11:02:24.0</li>
+							</ul>
+						</div>
+					</div>
+					<div class="tabContent" data-tab-cont="tab02">장애</div>
+					<div class="tabContent" data-tab-cont="tab03">컨설팅</div>
+					<div class="tabContent" data-tab-cont="tab04">병해충</div>
+				</div>
+			</div>
+
+			<div class="popupFooter">
+				<div class="popup_buttons">
+					<button type="button" class="btnPop_primary" onclick="popup.close('#pop1')">닫기</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script type="text/javascript">
+	$('.report_detail_farm .btn').click(function(){
+		var $this = $(this);
+		$this.closest('.report_detail_farm').find('.btn').removeClass('active');
+		$this.addClass('active')
+	});
+</script>
+</body>
+</html> 

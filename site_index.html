@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>지농KIOSK</title>
+	<link rel="stylesheet" type="text/css" href="guide_temp/css/temp.css" />
+	<script src="guide_temp/js/jquery-1.8.2.js" type="text/javascript"></script>
+	<script src="guide_temp/js/temp.style.js" type="text/javascript"></script>
+</head>
+<body>
+<a href="#none" style="position:fixed;bottom:65px;right:20px;" id="topSc"><img src="./guide_temp/images/btn_topScroll.png" width="42" height="42" alt="위로가기"></a>
+
+<div id="head">
+	<h1 class="alignC">지농 KIOSK</h1>
+</div>
+
+<div class="container">
+	<div class="common_guide">
+		<h2>Common</h2>
+		<ul class="quickLink">
+			<li><strong>본수 카운팅</strong> : 작업일에 일자가 들어가면 완료본수 카운팅</li>
+			<li><strong>바로가기</strong> : 
+				<a href="./html/sample/sub_layout.html" target="_blank">서브페이지 레이아웃 가이드</a> 
+			</li>
+		</ul>
+
+	</div><!-- //common_guide -->
+
+	<div class="wrap_tab_contents">
+
+		<div class="tab_content on" id="html_itbmp"><!-- template -->
+			<div class="ele_guide">
+				<div class="ele_guide_link">
+					<a href="#none" class="all_open">전체열기</a>
+				</div>
+			</div>
+
+			<!-- 1st Depth 공통 -->
+			<div class="wrap_deptitle" style="cursor: pointer;">
+				<h3 class="deptitle">HTML</h3>
+				<div class="cont_sum">
+					<dl>
+						<dt>작업대상 본수 : </dt>
+						<dd class="total"></dd>
+						<dt>완료본수 : </dt>
+						<dd class="compnum"></dd>
+						<dt>디자인 확인 필요 : </dt>
+						<dd class="dpoint"></dd>
+						<dt>기획 확인 필요 : </dt>
+						<dd class="ppoint"></dd>
+					</dl>
+				</div>
+			</div><!-- //.wrap_deptitle -->
+			<div class="wrap_list" style="display:block">
+				<table class="cont_list">
+					<colgroup>
+						<col width="60">
+						<col width="120">
+						<col width="200">
+						<col width="120">
+						<col width="120">
+						<col width="80">
+						<col width="120">
+						<col width="140">
+						<col width="80">
+						<col width="80">
+						<col width="80">
+						<col width="*">
+					</colgroup>
+					<thead>
+						<tr>
+							<th scope="col">No</th>
+							<th scope="col">1depth</th>
+							<th scope="col">2depth</th>
+							<th scope="col">3depth</th>
+							<th scope="col">4depth</th>
+							<th scope="col">UI Type</th>
+							<th scope="col">프로그램 ID</th>
+							<th scope="col">화면 ID</th>
+							<th scope="col">경로</th>
+							<th scope="col">작업자</th>
+							<th scope="col">작업일</th>
+							<th scope="col">수정일</th>
+							<th scope="col">비고</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="num"></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="uiType"></td>
+							<td class="prid">JN_KI_010101</td>
+							<td class="conid">JN_KI_010101</td>
+							<td><a href="#none" target="_blank"></a></td>
+							<td>이경민</td>
+							<td class="date">2022-05-20</td>
+							<td class="mod_date"></td>
+							<td></td>
+						</tr>
+						<tr>
+							<td class="num"></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td></td>
+							<td class="uiType"></td>
+							<td class="prid">JN_KI_010101</td>
+							<td class="conid">JN_KI_010101</td>
+							<td><a href="#none" target="_blank"></a></td>
+							<td>이경민</td>
+							<td class="date"></td>
+							<td class="mod_date"></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<!-- //메뉴 그룹 끝 -->
+
+		</div><!-- //.tab_content -->
+
+	</div>
+</div><!-- //.container -->
+
+
+
+<div id="foot">
+	<strong>fronBiz</strong> | <span>Digital Impact Agency</span>
+</div>
+</body>
+</html>
+

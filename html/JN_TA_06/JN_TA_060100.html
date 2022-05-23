@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>농산물 시세 | JINONG</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<script type="text/javascript" src="../../guide_temp/js/head.js"></script>
+</head>
+
+<body>
+
+<div class="wrap">
+	<div class="header">
+		<div class="headLogo">
+			<button type="button" class="btn_navi"><span class="hidden">메뉴</span></button>
+			<a href="#none"><h1>JINONG</h1></a>
+		</div>
+		<div class="headUtile">
+			<div class="userInfo"><strong>김지농</strong>(컨설턴트)님</div>
+			<button type="button" class="userAdmin"><span class="blind">시스템관리자</span></button>
+			<button type="button" class="gnbLogout">로그아웃</button>
+		</div>
+	</div>
+	<div class="container">
+		<div class="subNavi">
+			<script type="text/javascript" src="../../guide_temp/js/lnb.js"></script><!-- 퍼블확인용 메뉴 -->
+		</div>
+		<div class="content">
+			<h3 class="titH3">농산물시세</h3>
+			<div class="jsToggleLlink toggleSpace"><button type="button" data-jstoggle-link="toggle01" class="btn btn_jsToggle">검색 <span>닫기</span></button></div>
+			<div class="jsToggleCont" data-jstoggle-cont="toggle01">
+				<div class="tbSearch">
+					<table class="table">
+						<caption>데이터 조회 조건</caption>
+						<colgroup>
+							<col width="*">
+							<!-- <col width="100">
+							<col width="*">
+							<col width="100">
+							<col width="*">
+							<col width="100">
+							<col width="*"> -->
+						</colgroup>
+						<tbody>
+							<tr>
+								<th>지역</th>
+								<td>
+									<select class="select">
+										<option value="" selected>시/도</option>
+										<option value="">경기도</option>
+										<option value="">충청도</option>
+										<option value="">경상북도</option>
+									</select>
+									<select class="select">
+										<option value="" selected>시/군/구</option>
+										<option value="">과천시</option>
+										<option value="">의정부시</option>
+									</select>
+								</td>
+								<th>품목</th>
+								<td>
+									<select class="select">
+										<option value="" selected>전체</option>
+										<option value="">option 1</option>
+										<option value="">option 2</option>
+									</select>
+								</td>
+								<th>품종</th>
+								<td>
+									<select class="select">
+										<option value="" selected>전체</option>
+										<option value="">option 1</option>
+										<option value="">option 2</option>
+									</select>
+								</td>
+							</tr>
+							<tr>
+								<th>도매시장</th>
+								<td>
+									<div class="btnSet">
+										<input type="text" value="5선택" class="inputTxt">
+										<button type="button" class="btn btnTable">선택</button>
+									</div>
+								</td>
+								<th>기간선택</th>
+								<td>
+									<input type="date" name="" class="inputDate" value="2022-01-17"> ~ <input type="date" name="" class="inputDate" value="2022-01-17">
+								</td>
+								<th>규격</th>
+								<td>
+									<select class="select">
+										<option value="" selected>Kg</option>
+										<option value="">option 1</option>
+										<option value="">option 2</option>
+									</select>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<div class="btnAreaC"><button type="button" class="btn btnType01"><span class="icon_search">검색</span></button></div>
+			</div>
+			<div class="warp_graph">
+				그래프영역 <br><br><br><br><br><br><br><br><br><br>
+			</div>
+
+			<div class="excel_btn_area">
+				<button class="excelBtn-upload"><em>엑셀</em> <span>업로드</span></button>
+				<button class="excelBtn-download"><em>엑셀</em> <span>다운로드</span></button>
+			</div>
+
+			<table class="data-table" id="myTable">
+				<caption></caption>
+				<thead>
+					<tr>
+						<th>지역</th>
+						<th>도매시장</th>
+						<th>기준일자</th>
+						<th>품목</th>
+						<th>품종</th>
+						<th>규격</th>
+						<th>거래수량</th>
+						<th>평균가격(원)</th>
+						<th>최대가격(원)</th>
+						<th>최소가격(원)</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>안양도매시장</td>
+						<td>2021-12-30</td>
+						<td>풋고추</td>
+						<td>청양</td>
+						<td>kg</td>
+						<td>1,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>안양도매시장</td>
+						<td>2021-12-30</td>
+						<td>풋고추</td>
+						<td>청양</td>
+						<td>kg</td>
+						<td>1,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>안양도매시장</td>
+						<td>2021-12-30</td>
+						<td>풋고추</td>
+						<td>청양</td>
+						<td>kg</td>
+						<td>1,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>안양도매시장</td>
+						<td>2021-12-30</td>
+						<td>풋고추</td>
+						<td>청양</td>
+						<td>kg</td>
+						<td>1,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>안양도매시장</td>
+						<td>2021-12-30</td>
+						<td>풋고추</td>
+						<td>청양</td>
+						<td>kg</td>
+						<td>1,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>안양도매시장</td>
+						<td>2021-12-30</td>
+						<td>풋고추</td>
+						<td>청양</td>
+						<td>kg</td>
+						<td>1,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>안양도매시장</td>
+						<td>2021-12-30</td>
+						<td>풋고추</td>
+						<td>청양</td>
+						<td>kg</td>
+						<td>1,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>안양도매시장</td>
+						<td>2021-12-30</td>
+						<td>풋고추</td>
+						<td>청양</td>
+						<td>kg</td>
+						<td>1,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>안양도매시장</td>
+						<td>2021-12-30</td>
+						<td>풋고추</td>
+						<td>청양</td>
+						<td>kg</td>
+						<td>1,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>안양도매시장</td>
+						<td>2021-12-30</td>
+						<td>풋고추</td>
+						<td>청양</td>
+						<td>kg</td>
+						<td>1,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>안양도매시장</td>
+						<td>2021-12-30</td>
+						<td>풋고추</td>
+						<td>청양</td>
+						<td>kg</td>
+						<td>1,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>안양도매시장</td>
+						<td>2021-12-30</td>
+						<td>풋고추</td>
+						<td>청양</td>
+						<td>kg</td>
+						<td>1,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>안양도매시장</td>
+						<td>2021-12-30</td>
+						<td>풋고추</td>
+						<td>청양</td>
+						<td>kg</td>
+						<td>1,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>안양도매시장</td>
+						<td>2021-12-30</td>
+						<td>풋고추</td>
+						<td>청양</td>
+						<td>kg</td>
+						<td>1,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+					</tr>
+					<tr>
+						<td>경기도 안양시</td>
+						<td>안양도매시장</td>
+						<td>2021-12-30</td>
+						<td>풋고추</td>
+						<td>청양</td>
+						<td>kg</td>
+						<td>1,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+						<td>100,000</td>
+					</tr>
+				</tbody>
+			</table>
+		</div><!-- //.content -->
+	</div><!-- //.container -->
+</div><!-- //.wrap -->
+
+<script type="text/javascript">
+var table = $("#myTable").DataTable({
+	ordering:true,
+});
+</script>
+
+</body>
+</html> 
