@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "gh-pages": "^4.0.0"
+  },
+  "scripts": {
+    "deploy": "gh-pages -d build",
+    "predeploy": "npm run build"
+  },
+  "homepage": "https://kyoungminlee32.github.io/jinong/"
+}
