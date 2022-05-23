@@ -5,7 +5,6 @@
 html{font-size:62.5%;}
 html {position:relative;}
 html,body {color:#111;font-weight:normal;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;-webkit-tap-highlight-color:transparent;-webkit-user-select: none;-webkit-text-size-adjust: none; }
-body {font-size: 14px;}
 body,div,dl,dd,ul,ol,h1,h2,h3,h4,h5,h6,form,fieldset,legend,button,p,pre,blockquote,menu,figure,input {margin:0;padding:0;}
 header,footer,section,article,aside,nav,hgroup,details,menu,figure,figcaption {display:block;}
 body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,legend,select,input,textarea,p,blockquote,th,td,menu,button,a,span,strong,label,header,footer,section,article,aside,nav,hgroup,details,figure,figcaption {word-break:break-word;box-sizing:border-box;-moz-box-sizing:border-box;-webkit-box-sizing:border-box;-ms-box-sizing:border-box;}
@@ -21,7 +20,7 @@ input,select,textarea {appearance:none;-webkit-appearance:none;}
 input[type="text"]::-webkit-search-cancel-button {appearance:none;-webkit-appearance:none;} 
 button,select,option {color:inherit;text-transform:none;} 
 textarea {resize:none;}
-caption,legend {text-indent:-5000px;font-size:0;line-height:0;width:0;height:0;overflow:hidden;} 
+caption,legend {text-indent:-5000rem;font-size:0;line-height:0;width:0;height:0;overflow:hidden;} 
 table {table-layout:fixed;width:100%;border-collapse:collapse;border-spacing:0;} 
 button {background:none;text-align:left;cursor:pointer;overflow:visible;} 
 a {color: inherit}
@@ -39,30 +38,30 @@ a {text-decoration:none !important}
 .header.bg{position:relative;}
 .header.bg:before{content:'';display:block;position:absolute;left:0;bottom:0;width:100%; height:12.5rem;background:url('../images/common/farmimg@2x.png') no-repeat 0 0;background-size:16rem 16rem;}
 .header h1 {font-family:"Noto Sans";margin:0;font-size:2rem;line-height:2.9rem;color:#f6f7f4;font-weight:500;letter-spacing:-.06rem;}
-.container{padding-top:72px;min-height:100%;}
-.content{width:300px;margin:0 auto;padding-bottom:40px;}
+.container{padding-top:7.2rem;min-height:100%;}
+.content{width:30rem;margin:0 auto;padding-bottom:4rem;}
 .keypad{
   display:none;
-  padding: 17.5px 52.5px;
-  border-radius: 15px;
+  padding: 1.7rem 5.2rem;
+  border-radius: 1.5rem;
   background-color: #f7f7f7;
 }
 .keypad .col{
-  width: 60px;
-  height: 50px;
+  width: 6rem;
+  height: 5rem;
   padding:0;
-  margin: 0 7px 7px 0;
+  margin: 0 .7rem .7rem 0;
 }
 .keypad button{
-  width: 60px;
-  height: 50px;
-  border-radius: 5px;
-  font-size:18px;
-  line-height:50px;
+  width: 6rem;
+  height: 5rem;
+  border-radius: .5rem;
+  font-size:1.8rem;
+  line-height:5rem;
   text-align:center;
   color:#222;
   font-weight:500;
-  box-shadow: 0 1px 2.5px 0 rgba(0, 0, 0, 0.16);
+  box-shadow: 0 .1rem .25rem 0 rgba(0, 0, 0, 0.16);
   background-image: linear-gradient(to bottom, #fff, #f2f2f2);
 }
 .keypad .blind{
@@ -73,9 +72,9 @@ a {text-decoration:none !important}
   position:relative;
   font-size:0;
   line-height:0;
-  width:1px;
-  height:1px;
-  margin-top:-1px;
+  width:.1rem;
+  height:.1rem;
+  margin-top:-.1rem;
 }
 .keypad .blind .delete span:before{
   content:'';
@@ -84,14 +83,14 @@ a {text-decoration:none !important}
   left:50%;
   top:50%;
   transform:translate(-50%,-90%);
-  width:20px;
-  height:16px;
-  background:url('../images/common/icon_calculator_delete@2x.png') no-repeat 0 0;background-size:20px 16px;
+  width:2rem;
+  height:1.6rem;
+  background:url('../images/common/icon_calculator_delete@2x.png') no-repeat 0 0;background-size:2rem 1.6rem;
 }
 footer .btn_footer{
   display:flex;
   justify-content: space-between;
-  padding:17px 10px;
+  padding:1.7rem 1rem;
   background-color: #e8ecee;
 }
 footer .btnSet{
@@ -99,29 +98,29 @@ footer .btnSet{
 }
 footer .btnSet .btn{margin:0;}
 .from-box{
-  width:300px;
+  width:30rem;
   margin:0 auto;
 }
 .from-box .form-group{
-  margin-bottom:12px;
+  margin-bottom:1.2rem;
 }
 .from-box label{
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #222;
 }
 .from-box input{
-  height:40px;
-  font-size:15px;
-  margin: 6.5px 0;
-  padding: 9px 15px;
+  height:4rem;
+  font-size:1.5rem;
+  margin: .65rem 0;
+  padding: .9rem 1.5rem;
   border:none;
-  border-radius: 15px;
+  border-radius: 1.5rem;
   background-color:#f6f6f6;
 }
 footer .banner{
   width:100%;
-  height:180px;
+  height:18rem;
   color:#fff;
   display:flex;
   align-items:center;
@@ -132,53 +131,53 @@ footer .banner{
 
 /* button */
 .btnSet{
-  margin-top:18px;
+  margin-top:1.8rem;
   text-align:center;
 }
 .btnSet .btn:hover,
 .btnSet .btn:visited{color:#fff;}
 .btnSet .btnType01{
-  width: 153px;
-  height: 56px;
-  padding: 15px 0;
-  border-radius: 15px;
+  width: 15.3rem;
+  height: 5.6rem;
+  padding: 1.5rem 0;
+  border-radius: 1.5rem;
   color:#fff;
-  font-size:18px;
+  font-size:1.8rem;
   background-color: #116f72;
 }
 
 .btnSet .btn-prev{
   position:relative;
-  width: 110px;
-  height: 56px;
-  padding: 0 17px;
-  border-radius: 15px;
-  border: solid 1px #222;
+  width: 11rem;
+  height: 5.6rem;
+  padding: 0 1.7rem;
+  border-radius: 1.5rem;
+  border: solid .1rem #222;
   color:#222;
-  font-size:18px;
-  line-height:54px;
+  font-size: 1.8rem;;
+  line-height:5.4rem;
   text-align:right;
   background-color: #fff;
 }
 .btnSet .btn-home{
   position:relative;
-  width: 110px;
-  height: 56px;
-  margin: 0 17px;
-  padding:0 17px;
-  border-radius: 15px;
+  width: 11rem;
+  height: 5.6rem;
+  margin: 0 1.7rem;
+  padding:0 1.7rem;
+  border-radius: 1.5rem;
   color:#fff;
-  font-size:18px;
-  line-height:54px;
+  font-size:1.8rem;
+  line-height:5.4rem;
   background-color: #444;
 }
 .btnSet .btn-home span{
   position:relative;
   font-size:0;
   line-height:0;
-  width:1px;
-  height:1px;
-  margin-top:-1px;
+  width:.1rem;
+  height:.1rem;
+  margin-top:-.1rem;
 }
 .btnSet .btn-home span:before{
   content:'';
@@ -187,9 +186,9 @@ footer .banner{
   left:50%;
   top:50%;
   transform:translate(-50%,-90%);
-  width:20px;
-  height:17px;
-  background:url('../images/common/ic_home_24px@2x.png') no-repeat 0 0;background-size:20px 17px;
+  width:2rem;
+  height:1.7rem;
+  background:url('../images/common/ic_home_24@2x.png') no-repeat 0 0;background-size:2rem 1.7rem;
 }
 .btnSet .btn-prev:hover,
 .btnSet .btn-prev:visited{color:#222;}
@@ -197,23 +196,23 @@ footer .banner{
   content:'';
   display:block;
   position:absolute;
-  left:17px;
+  left:1.7rem;
   top:50%;
   transform:translateY(-50%);
-  width:11px;
-  height:12.5px;
-  background:url('../images/common/ico_arrow@2x.png') no-repeat 0 0;background-size:11px 12.5px;
+  width:1.1rem;
+  height:1.25rem;
+  background:url('../images/common/ico_arrow@2x.png') no-repeat 0 0;background-size:1.1rem 1.25rem;
 }
 .btnSet .btn-next{
   position:relative;
-  width: 110px;
-  height: 56px;
-  padding: 0 17px;
-  border-radius: 15px;
-  border: solid 1px #222;
+  width: 11rem;
+  height: 5.6rem;
+  padding: 0 1.7rem;
+  border-radius: 1.5rem;
+  border: solid .1rem #222;
   color:#222;
-  font-size:18px;
-  line-height:54px;
+  font-size:1.8rem;
+  line-height:5.4rem;
   background-color: #fff;
 }
 .btnSet .btn-next:hover,
@@ -222,10 +221,10 @@ footer .banner{
 @media (min-width: 1080px) {
   html{zoom:260%;}
   .btnSet .btn-prev,.btnSet .btn-home,.btnSet .btn-next{
-    width:105px;
+    width:10.5rem;
   }
   footer .btn_footer{
-    padding:17px 34px;
+    padding:1.7rem 3.4rem;
   }
   .keypad{
     display:block;
