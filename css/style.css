@@ -91,7 +91,7 @@ a {text-decoration:none !important}
 footer .btn_footer{
   display:flex;
   justify-content: space-between;
-  padding:17px 20px;
+  padding:17px 10px;
   background-color: #e8ecee;
 }
 footer .btnSet{
