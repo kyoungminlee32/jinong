@@ -37,8 +37,8 @@ a {text-decoration:none !important}
 .wrap{height:100%;}
 .header{height:12.5rem;width:100%;justify-content: center;align-items:center;background-color:#126b75;display:flex;text-align:center;border-radius:0 0 3.5rem 0;}
 .header.bg{position:relative;}
-.header.bg:before{content:'';display:block;position:absolute;left:0;bottom:0;width:100%; height:12.5rem;background:url('../images/common/farmimg@2x.png') no-repeat 0 0;background-size:18.1rem 18.1rem;}
-.header h1 {font-family:"Noto Sans";font-size:2rem;line-height:2.9rem;color:#f6f7f4;font-weight:500;letter-spacing:-.06rem;}
+.header.bg:before{content:'';display:block;position:absolute;left:0;bottom:0;width:100%; height:12.5rem;background:url('../images/common/farmimg@2x.png') no-repeat 0 0;background-size:16rem 16rem;}
+.header h1 {font-family:"Noto Sans";margin:0;font-size:2rem;line-height:2.9rem;color:#f6f7f4;font-weight:500;letter-spacing:-.06rem;}
 .container{padding-top:72px;min-height:100%;}
 .content{width:300px;margin:0 auto;padding-bottom:40px;}
 .keypad{
