@@ -38,8 +38,10 @@ a {text-decoration:none !important}
 .header.bg{position:relative;}
 .header.bg:before{content:'';display:block;position:absolute;left:0;bottom:0;width:100%; height:12.5rem;background:url('../images/common/farmimg@2x.png') no-repeat -1rem 4.2rem;background-size:10rem 10rem;}
 .header h1 {font-family:"Noto Sans";margin:0;font-size:2rem;line-height:2.9rem;color:#f6f7f4;font-weight:500;letter-spacing:-.06rem;}
-.container{padding-top:4rem;min-height:100%;}
-.content{width:30rem;margin:0 auto;padding-bottom:4rem;}
+.sub_header{height:4.5rem;border-radius:0 0 3.5rem 3.5rem;}
+.container{padding:4rem 0 0 !important;min-height:100%;}
+.content .inner{width:30rem;margin:0 auto;padding-bottom:4rem;}
+.Section + .Section{padding-top:1rem;background-color:#eee;}
 .keypad{
   display:none;
   padding: 1.7rem 5.2rem;
@@ -268,10 +270,31 @@ footer .banner{
 }
 .popup_layer .btn-done:hover,
 .popup_layer .btn-done:visited{color:#fff;}
+.item_list{
+  overflow:hidden;
+  background-color:#fff;
+  padding:1.5rem;
+}
+.item_list li{
+  display:inline-block;
+  width: 8rem;
+  height: 5rem;
+  margin: .5rem .2rem;
+  border-radius: 1rem;
+  text-align:center;
+  background-image: linear-gradient(to bottom, #a2aabd, #828ca7);
+}
+.item_list li a{
+  display:block;
+  color:#fff;
+  font-size:1.5rem;
+  line-height:5rem;
+}
 @media (min-width: 1080px) {
   html{zoom:260%;}
   .header{height:12.5rem}
   .header.bg:before{content:'';display:block;position:absolute;left:0;bottom:0;width:100%; height:12.5rem;background:url('../images/common/farmimg@2x.png') no-repeat -1rem 2rem;background-size:13rem 13rem;}
+  .sub_header{height:5.5rem;}
   .btnSet .btn-prev,.btnSet .btn-home,.btnSet .btn-next{
     width:10.5rem;
   }
@@ -280,5 +303,8 @@ footer .banner{
   }
   .keypad{
     display:block;
+  }
+  .item_list{
+    padding:3.6rem;
   }
 }
