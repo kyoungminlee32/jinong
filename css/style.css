@@ -91,7 +91,7 @@ a {text-decoration:none !important}
 footer .btn_footer{
   display:flex;
   justify-content: space-between;
-  padding:17px 28px;
+  padding:17px 20px;
   background-color: #e8ecee;
 }
 footer .btnSet{
@@ -149,7 +149,7 @@ footer .banner{
 
 .btnSet .btn-prev{
   position:relative;
-  width: 100px;
+  width: 110px;
   height: 56px;
   padding: 0 17px;
   border-radius: 15px;
@@ -162,7 +162,7 @@ footer .banner{
 }
 .btnSet .btn-home{
   position:relative;
-  width: 100px;
+  width: 110px;
   height: 56px;
   margin: 0 17px;
   padding:0 17px;
@@ -206,7 +206,7 @@ footer .banner{
 }
 .btnSet .btn-next{
   position:relative;
-  width: 100px;
+  width: 110px;
   height: 56px;
   padding: 0 17px;
   border-radius: 15px;
