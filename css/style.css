@@ -38,10 +38,10 @@ a {text-decoration:none !important}
 .header.bg{position:relative;}
 .header.bg:before{content:'';display:block;position:absolute;left:0;bottom:0;width:100%; height:12.5rem;background:url('../images/common/farmimg@2x.png') no-repeat -1rem 4.2rem;background-size:10rem 10rem;}
 .header h1 {font-family:"Noto Sans";margin:0;font-size:2rem;line-height:2.9rem;color:#f6f7f4;font-weight:500;letter-spacing:-.06rem;}
-.sub_header{height:4.5rem;border-radius:0 0 3.5rem 3.5rem;}
+.sub_header{position:fixed;top:0;z-index:1000;height:4.5rem;border-radius:0 0 3.5rem 3.5rem;}
 .container{padding:0 !important;min-height:100%;}
 .content{padding:4rem 0 0 !important;}
-.sub_header + .container .content{padding:0 !important;}
+.sub_header + .container .content{padding:5.5rem 0 0 !important;}
 .content .inner{
   padding:0 5rem;
   background-color:#fff;
