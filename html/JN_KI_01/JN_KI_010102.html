@@ -9,12 +9,13 @@
 	<link rel="stylesheet" type="text/css" href="../../css/style.css">
 	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
 	<script src="../../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
 	<script src="../../js/bootstrap.min.js"></script>
 	<script src="../../js/ui.js"></script>
+	
 </head>
 
 <body>
-
 	<div class="wrap">
 		<div class="header sub_header">
 			<h1>작업정보</h1>
@@ -22,26 +23,164 @@
 		<div class="container">
 			<div class="content">
 				<div class="Section">
-					<div class="row">
-						<div class="col">
-							
+					<div class="chart-item">
+						<div class="chart-wrap">
+							<div>
+								<canvas id="myChart01">금일 작업 이행율 차트</canvas>
+								<script>
+									const ctx01 = document.getElementById('myChart01');
+									const myChart01 = new Chart(ctx01, {
+										type: 'doughnut',
+										data: {
+											datasets: [{
+												data: [35, 65],      // 금일 작업 이행율, 총 작업 이행율 
+												backgroundColor: [
+												'#09ae81',			// 금일 작업 이행율
+												'#ededee'			// 총 작업 이행율
+												],
+												borderWidth: 0,
+												scaleBeginAtZero: true,
+											}
+											]
+										},
+										options: {
+											aspectRatio: 1,
+											layout: {
+												padding: {
+													left: 0,
+													right: 0,
+													top: 0,
+													bottom: 0,
+												}
+											},
+											responsive: true,
+											cutoutPercentage:65 // 도넛 안쪼 원 굵기
+										}
+									});
+								</script>
+								<p>금일 작업 이행율</p>
+							</div>
+							<div>
+								<canvas id="myChart02">전일 작업 이행율 차트</canvas>
+								<script>
+									const ctx02 = document.getElementById('myChart02');
+									const myChart02 = new Chart(ctx02, {
+										type: 'doughnut',
+										data: {
+											datasets: [{
+												data: [85, 15],      // 전일 작업 이행율, 총 작업 이행율 
+												backgroundColor: [
+												'#114d88',			// 전일 작업 이행율
+												'#ededee'			// 총 작업 이행율
+												],
+												borderWidth: 0,
+												scaleBeginAtZero: true,
+											}
+											]
+										},
+										options: {
+											aspectRatio: 1,
+											layout: {
+												padding: {
+													left: 0,
+													right: 0,
+													top: 0,
+													bottom: 0,
+												}
+											},
+											responsive: true,
+											cutoutPercentage:65 // 도넛 안쪼 원 굵기
+										}
+									});
+								</script>
+								<p>전일 작업 이행율</p>
+							</div>
 						</div>
-						<div class="col">
-							
+						<div class="item-scroll">
+							<div class="item-wrap">
+								<div class="box">
+									<dl class="item">
+										<dt>파종</dt>
+										<dd>
+											<ul>
+												<li>카이피라 / 육묘렉 / 300ea</li>
+												<li>이자벨 / 육묘렉 / 600ea</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="box">
+									<dl class="item">
+										<dt>정식</dt>
+										<dd>
+											<ul>
+												<li>카이피라 / 육묘렉 / 300ea</li>
+												<li>이자벨 / 육묘렉 / 600ea</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="box">
+									<dl class="item">
+										<dt>파종</dt>
+										<dd>
+											<ul>
+												<li>카이피라 / 육묘렉 / 300ea</li>
+												<li>이자벨 / 육묘렉 / 600ea</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="box">
+									<dl class="item">
+										<dt>정식</dt>
+										<dd>
+											<ul>
+												<li>카이피라 / 육묘렉 / 300ea</li>
+												<li>이자벨 / 육묘렉 / 600ea</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="box">
+									<dl class="item">
+										<dt>파종</dt>
+										<dd>
+											<ul>
+												<li>카이피라 / 육묘렉 / 300ea</li>
+												<li>이자벨 / 육묘렉 / 600ea</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+								<div class="box">
+									<dl class="item">
+										<dt>정식</dt>
+										<dd>
+											<ul>
+												<li>카이피라 / 육묘렉 / 300ea</li>
+												<li>이자벨 / 육묘렉 / 600ea</li>
+											</ul>
+										</dd>
+									</dl>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
 				<div class="Section">
-					<div class="row">
-						<div class="col">
-							<ul class="item_list">
-								<li><a href="javascript:void(0);">작업관리</a></li>
-								<li><a href="javascript:void(0);">출하관리</a></li>
-								<li><a href="javascript:void(0);">재고관리</a></li>
-								<li><a href="javascript:void(0);">일일점검</a></li>
-								<li><a href="javascript:void(0);">근태관리</a></li>
-								<li><a href="javascript:void(0);">작업이력</a></li>
-							</ul>
+					<div class="inner item-list">
+						<div class="row">
+							<div class="col">
+								<ul>
+									<li><a href="javascript:void(0);">작업관리</a></li>
+									<li><a href="javascript:void(0);">출하관리</a></li>
+									<li><a href="javascript:void(0);">재고관리</a></li>
+									<li><a href="javascript:void(0);">일일점검</a></li>
+									<li><a href="javascript:void(0);">근태관리</a></li>
+									<li><a href="javascript:void(0);">작업이력</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -65,7 +204,7 @@
 		</footer><!-- //footer -->
 	</div>
 	<!-- Modal -->
-	<div class="modal popup_layer fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal popup-layer fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">
