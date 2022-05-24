@@ -274,7 +274,7 @@ footer .banner{
 .popup-layer .btn-done:visited{color:#fff;}
 .chart-item{
   display:flex;
-  justify-content: space-between;
+  justify-content: space-around;
   padding:0 2rem 2rem;
 }
 .chart-wrap{
