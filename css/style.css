@@ -716,51 +716,56 @@ footer .banner {
   margin: 0;
 }
 
-.table-work-wrap {
+.table-basic-wrap {
   padding-top: 2rem;
 }
 
-.table-work {
+.table-basic {
   overflow: auto;
   max-height: 40rem;
   border-radius: 1rem 1rem 0 0;
   margin-bottom: 2.5rem;
 }
 
-.table-work .bg-info01 {
+.table-basic .bg-info01 {
   background-color: #e8fbfc;
 }
 
-.table-work .bg-info02 {
+.table-basic .bg-info02 {
   background-color: #faf3fe;
 }
 
-.table-work .bg-info03 {
+.table-basic .bg-info03 {
   background-color: #f8f8f8;
 }
 
-.table-work table {
-  width: 64rem;
+.table-basic table {
+  width: auto;
   margin: 0;
 }
-
-.table-work table>:not(:first-child) {
+.table-work table {
+  width: 64rem;
+}
+.table-basic table>:not(:first-child) {
   border-top: none;
 }
 
-.table-work tbody td {
+.table-basic tbody td {
   text-align: center;
   border: none;
   font-size: 1.4rem;
-  padding: 1.2rem 0.5rem;
+  padding: 1.2rem;
+  vertical-align: middle;
 }
-
-.table-work thead tr {
+.table-basic tbody tr:nth-child(2n){
+  background-color:#f8f8f8;
+}
+.table-basic thead tr {
   box-shadow: 0 5px 7.5px 0 rgba(0, 0, 0, 0.16);
   background-color: #384e57;
 }
 
-.table-work thead tr th {
+.table-basic thead tr th {
   text-align: center;
   font-size: 1.4rem;
   line-height: 4.8rem;
@@ -769,10 +774,10 @@ footer .banner {
   padding: 0 .5rem
 }
 
-.table-work thead label, .table-work tbody label {
+.table-basic thead label, .table-basic tbody label {
   position: absolute;
   left: -999rem;
-  font-size: 0;
+  font-size: 0;card
   line-height: 0;
   width: .1rem;
   height: .1rem;
@@ -780,19 +785,21 @@ footer .banner {
   overflow: hidden;
 }
 
-.table-work tbody {
+.table-basic tbody {
   border: none !important;
 }
 
-.table-work .form-check {
+.table-basic .form-check {
   display: inline-block;
   padding: 0;
   margin: 0;
 }
 
-.table-work .form-check .form-check-input {
+.table-basic .form-check .form-check-input {
   margin: 0;
 }
+
+
 
 .form-work .form-group {
   position: relative;
@@ -823,16 +830,64 @@ footer .banner {
   text-align: right;
 }
 
+.form-select-box {
+  padding-top:1rem;
+}
+.from-box select {
+  display:none;
+}
 .from-box .form-select {
   color: #222;
   font-size: 1.5rem;
   line-height: 4rem;
-  border-radius: 1.5rem;
+  border-radius: 1.5rem !important;
+  padding:0 !important;
   text-align: center;
   font-weight: 500;
   -webkit-appearance: none;
-  background: url('../images/common/icon_select_form_down.png') no-repeat right 1.5rem center;
+  overflow:hidden
+}
+.from-box .form-select .accordion-item{
+  border:none;
+  border-radius:none;
+}
+.from-box .form-select button{
+  padding:1.6rem;
+  color:#222;
+  font-size:1.5rem;
+}
+.from-box .form-select button:after{
+  background: url('../images/common/icon_select_form_down.png') no-repeat right 0 center;
   background-size: 1.2rem .8rem;
+}
+.from-box .form-select .accordion-button:not(.collapsed){
+  background-color:#fff;
+  box-shadow: 0 5px 7.5px 0 rgba(0, 0, 0, 0.08) !important;
+  border-bottom: solid .1rem #ddd;
+  
+}
+.from-box .form-select .accordion-button:focus{
+  border-color:#ddd;
+  box-shadow:none;
+}
+.from-box .form-select .accordion-body{
+  padding:0;
+}
+.from-box .form-select ul{
+  padding:0;
+  margin:0;
+}
+.from-box .form-select ul li + li {
+  border-top:.1rem solid #ddd;
+}
+.from-box .form-select ul li{
+  font-size:1.5rem;
+  color:#222;
+  font-weight:500;
+  padding:.5rem;
+}
+.from-box .form-select ul li:hover{
+  background-color:#e8fbfc;
 }
 .card-list{
   overflow:hidden;
@@ -972,5 +1027,8 @@ footer .banner {
     margin-top:5rem;
     margin-bottom:10rem;
   }
-
+  .table-basic table {
+    width: 64rem;
+    margin: 0;
+  }
 }

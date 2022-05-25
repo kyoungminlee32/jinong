@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="utf-8">
+	<title>JINING | KIOSK</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<meta name="apple-mobile-web-app-title" content="JINING">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+	<link rel="stylesheet" type="text/css" href="../../css/style.css">
+	<link rel="stylesheet" type="text/css" href="../../css/bootstrap.css">
+	<script src="../../js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+	<script src="../../js/bootstrap.min.js"></script>
+	<script src="../../js/ui.js"></script>
+	
+</head>
+
+<body>
+	<div class="wrap">
+		<div class="sub-header">
+			<div class="header-nav">
+				<div class="btnSet text-start">
+					<button type="button" onclick="goBack();" class="btn btn-prev">뒤로</button>
+				</div>
+	
+				<div class="btnSet">
+					<button type="button" class="btn btn-home"><span>홈</span></button>
+				</div>
+	
+				<div class="btnSet text-end">
+					<button type="button" class="btn btn-next" data-bs-toggle="modal" data-bs-target="#exampleModal">로그아웃</button>
+				</div>
+			</div>
+			<div class="tit-header">
+				<h1>출하관리</h1>
+			</div>
+		</div>
+		<div class="container">
+			<div class="content">
+				<div class="Section">
+					<div class="inner">
+						<div class="table-basic-wrap">
+							<div class="table-basic">
+								<table class="table" summary="상태,입고/출고일,구분,품목,입고/출고 수량,재고 테이블 정보 입니다.">
+									<caption>작업관리 테이블</caption>
+									<colgroup>
+										<col width="12%" />
+										<col width="25%" />
+										<col width="12%" />
+										<col width="12%" />
+										<col width="27%" />
+										<col />
+									</colgroup>
+									<thead>
+									  <tr>
+										<th scope="col">상태</th>
+										<th scope="col">입고/출고일</th>
+										<th scope="col">구분</th>
+										<th scope="col">품목</th>
+										<th scope="col">입고/출고 수량</th>
+										<th scope="col">재고</th>
+									  </tr>
+									</thead>
+									<tbody>
+									  <tr>
+										<td>입고</td>
+										<td>20220408</td>
+										<td>구분1</td>
+										<td>품목1</td>
+										<td>30</td>
+										<td>300</td>
+									  </tr>
+									  <tr>
+										<td>입고</td>
+										<td>20220408</td>
+										<td>구분1</td>
+										<td>품목1</td>
+										<td>30</td>
+										<td>300</td>
+									  </tr>
+									</tbody>
+								</table>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="Section">
+					<div class="inner">
+						<div class="form-select-box">
+							<div class="from-box">
+								<form>
+									<div class="form-group">
+										<select class="form-select" aria-label="구분" id="Select01">
+											<option selected>구분</option>
+											<option value="구분1">구분1</option>
+											<option value="구분2">구분2</option>
+											<option value="구분3">구분3</option>
+										</select>
+										<div class="accordion form-select">
+											<div class="accordion-item">
+											  <h2 class="accordion-header" id="heading01">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse01" aria-expanded="false" aria-controls="collapse01">구분</button>
+											  </h2>
+											  <div id="collapse01" class="accordion-collapse collapse">
+												<div class="accordion-body">
+													<ul>
+														<li>구분1</li>
+														<li>구분2</li>
+														<li>구분3</li>
+													</ul>
+												</div>
+											  </div>
+											</div>
+										</div>
+									</div>
+									<div class="form-group">
+										<select class="form-select" aria-label="구분" id="Select02">
+											<option selected>품목</option>
+											<option value="품목1">품목1</option>
+											<option value="품목2">품목2</option>
+											<option value="품목3">품목3</option>
+										</select>
+										<div class="accordion form-select">
+											<div class="accordion-item">
+											  <h2 class="accordion-header" id="heading02">
+												<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse02" aria-expanded="false" aria-controls="collapse02">품목</button>
+											  </h2>
+											  <div id="collapse02" class="accordion-collapse collapse">
+												<div class="accordion-body">
+													<ul>
+														<li>품목1</li>
+														<li>품목2</li>
+														<li>품목3</li>
+													</ul>
+												</div>
+											  </div>
+											</div>
+										</div>
+									</div>
+									<div class="btnSet">
+										<button type="submit" class="btn btnType01">입출 등록</button>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div><!-- //content -->
+		</div><!-- //container -->
+		<footer>
+			<div class="footer-nav">
+				<div class="btn-footer">
+					<div class="btnSet text-start">
+						<button type="button" onclick="goBack();" class="btn btn-prev">뒤로</button>
+					</div>
+	
+					<div class="btnSet">
+						<button type="button" class="btn btn-home"><span>홈</span></button>
+					</div>
+	
+					<div class="btnSet text-end">
+						<button type="button" class="btn btn-next" data-bs-toggle="modal" data-bs-target="#exampleModal">로그아웃</button>
+					</div>
+				</div>
+			</div>
+			
+			<div class="banner">banner area</div>
+		</footer><!-- //footer -->
+	</div>
+	<!-- Modal -->
+	<div class="modal popup-layer fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+				<!-- <h5 class="modal-title" id="exampleModalLabel">Modal title</h5> -->
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					로그아웃 하시겠습니까?
+				</div>
+				<div class="modal-footer">
+					<div class="row">
+						<div class="col">
+							<button type="button" class="btn btn-cancel" data-bs-dismiss="modal">취소</button>
+						</div>
+						<div class="col">
+							<button type="button" class="btn btn-done">확인</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html> 
