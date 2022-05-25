@@ -728,15 +728,14 @@ footer .banner {
 }
 
 .table-basic .bg-info01 {
-  background-color: #e8fbfc;
+  background-color: #e8fbfc !important;
 }
-
 .table-basic .bg-info02 {
-  background-color: #faf3fe;
+  background-color: #faf3fe !important;
 }
 
 .table-basic .bg-info03 {
-  background-color: #f8f8f8;
+  background-color: #f8f8f8 !important;
 }
 
 .table-basic table {
