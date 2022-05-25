@@ -17,8 +17,23 @@
 
 <body>
 	<div class="wrap">
-		<div class="header sub_header">
-			<h1>작업관리</h1>
+		<div class="sub-header">
+			<div class="header-nav">
+				<div class="btnSet text-start">
+					<button type="button" onclick="goBack();" class="btn btn-prev">뒤로</button>
+				</div>
+	
+				<div class="btnSet">
+					<button type="button" class="btn btn-home"><span>홈</span></button>
+				</div>
+	
+				<div class="btnSet text-end">
+					<button type="button" class="btn btn-next" data-bs-toggle="modal" data-bs-target="#exampleModal">로그아웃</button>
+				</div>
+			</div>
+			<div class="tit-header">
+				<h1>작업관리</h1>
+			</div>
 		</div>
 		<div class="container">
 			<div class="content">
@@ -43,7 +58,7 @@
 								  <tr>
 									<th scope="col">
 										<div class="form-check">
-											<input class="form-check-input" type="checkbox" value="" id="CheckAll">
+											<input class="form-check-input" type="checkbox" value="" id="CheckAll" />
 											<label class="form-check-label" for="CheckAll">checkbox</label>
 										</div>
 									</th>
@@ -61,7 +76,7 @@
 								  <tr class="bg-info01">
 									<td scope="row">
 										<div class="form-check">
-											<input class="form-check-input" type="checkbox" value="" id="Check01">
+											<input class="form-check-input" type="checkbox" value="" id="Check01" />
 											<label class="form-check-label" for="Check01">checkbox</label>
 										</div>
 									</td>
@@ -77,7 +92,7 @@
 								  <tr class="bg-info01">
 									<td scope="row">
 										<div class="form-check">
-											<input class="form-check-input" type="checkbox" value="" id="Check02">
+											<input class="form-check-input" type="checkbox" value="" id="Check02" />
 											<label class="form-check-label" for="Check02">checkbox</label>
 										</div>
 									</td>
@@ -90,11 +105,11 @@
 									<td>20220408</td>
 									<td>20220408</td>
 								  </tr>
-								  <tr>
+								  <tr class="bg-info01 bg-info02">
 									<td scope="row">
 										<div class="form-check">
-											<input class="form-check-input" type="checkbox" value="" id="Check02">
-											<label class="form-check-label" for="Check02">checkbox</label>
+											<input class="form-check-input" type="checkbox" value="" id="Check03" checked />
+											<label class="form-check-label" for="Check03">checkbox</label>
 										</div>
 									</td>
 									<td>20220408</td>
@@ -106,11 +121,11 @@
 									<td></td>
 									<td></td>
 								  </tr>
-								  <tr class="bg-info02">
+								  <tr class="bg-info01 bg-info02">
 									<td scope="row">
 										<div class="form-check">
-											<input class="form-check-input" type="checkbox" value="" id="Check02">
-											<label class="form-check-label" for="Check02">checkbox</label>
+											<input class="form-check-input" type="checkbox" value="" id="Check04" />
+											<label class="form-check-label" for="Check04">checkbox</label>
 										</div>
 									</td>
 									<td>20220408</td>
@@ -125,8 +140,8 @@
 								  <tr>
 									<td scope="row">
 										<div class="form-check">
-											<input class="form-check-input" type="checkbox" value="" id="Check02">
-											<label class="form-check-label" for="Check02">checkbox</label>
+											<input class="form-check-input" type="checkbox" value="" id="Check05" />
+											<label class="form-check-label" for="Check05">checkbox</label>
 										</div>
 									</td>
 									<td>20220408</td>
@@ -141,8 +156,8 @@
 								  <tr>
 									<td scope="row">
 										<div class="form-check">
-											<input class="form-check-input" type="checkbox" value="" id="Check01">
-											<label class="form-check-label" for="Check01">checkbox</label>
+											<input class="form-check-input" type="checkbox" value="" id="Check06" />
+											<label class="form-check-label" for="Check06">checkbox</label>
 										</div>
 									</td>
 									<td>20220408</td>
@@ -157,8 +172,8 @@
 								  <tr>
 									<td scope="row">
 										<div class="form-check">
-											<input class="form-check-input" type="checkbox" value="" id="Check02">
-											<label class="form-check-label" for="Check02">checkbox</label>
+											<input class="form-check-input" type="checkbox" value="" id="Check07" />
+											<label class="form-check-label" for="Check07">checkbox</label>
 										</div>
 									</td>
 									<td>20220408</td>
@@ -173,8 +188,8 @@
 								  <tr>
 									<td scope="row">
 										<div class="form-check">
-											<input class="form-check-input" type="checkbox" value="" id="Check01">
-											<label class="form-check-label" for="Check01">checkbox</label>
+											<input class="form-check-input" type="checkbox" value="" id="Check08" />
+											<label class="form-check-label" for="Check08">checkbox</label>
 										</div>
 									</td>
 									<td>20220408</td>
@@ -189,8 +204,8 @@
 								  <tr>
 									<td scope="row">
 										<div class="form-check">
-											<input class="form-check-input" type="checkbox" value="" id="Check02">
-											<label class="form-check-label" for="Check02">checkbox</label>
+											<input class="form-check-input" type="checkbox" value="" id="Check09" />
+											<label class="form-check-label" for="Check09">checkbox</label>
 										</div>
 									</td>
 									<td>20220408</td>
@@ -212,31 +227,50 @@
 						<div class="btnWorkSet">
 							<button type="button" class="btn btn-work-start">작업시작</button>
 							<button type="button" class="btn btn-work-cancel">작업취소</button>
-							<button type="button" class="btn btn-work-end">작업종료</button>
+							<button type="button" class="btn btn-work-end"data-bs-toggle="modal" data-bs-target="#alert01">작업종료</button>
 						</div>
 					</div>
 				</div>
 			</div><!-- //content -->
 		</div><!-- //container -->
 		<footer>
-			<div class="btn_footer">
-				<div class="btnSet text-start">
-					<button type="button" onclick="goBack();" class="btn btn-prev">뒤로</button>
-				</div>
-
-				<div class="btnSet">
-					<button type="button" class="btn btn-home"><span>홈</span></button>
-				</div>
-
-				<div class="btnSet text-end">
-					<button type="button" class="btn btn-next" data-bs-toggle="modal" data-bs-target="#exampleModal">로그아웃</button>
+			<div class="footer-nav">
+				<div class="btn-footer">
+					<div class="btnSet text-start">
+						<button type="button" onclick="goBack();" class="btn btn-prev">뒤로</button>
+					</div>
+	
+					<div class="btnSet">
+						<button type="button" class="btn btn-home"><span>홈</span></button>
+					</div>
+	
+					<div class="btnSet text-end">
+						<button type="button" class="btn btn-next" data-bs-toggle="modal" data-bs-target="#exampleModal">로그아웃</button>
+					</div>
 				</div>
 			</div>
+			
 			<div class="banner">banner area</div>
 		</footer><!-- //footer -->
 	</div>
+	<div class="modal popup-layer fade" id="alert01" tabindex="-1" aria-hidden="true">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-body">
+					작업을 선택해 주세요.
+				</div>
+				<div class="modal-footer">
+					<div class="row">
+						<div class="col">
+							<button type="button" class="btn btn-cancel" data-bs-dismiss="modal">확인</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 	<!-- Modal -->
-	<div class="modal popup-layer fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+	<div class="modal popup-layer fade" id="exampleModal" tabindex="-1" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
 				<div class="modal-header">

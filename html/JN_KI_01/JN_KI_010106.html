@@ -17,8 +17,23 @@
 
 <body>
 	<div class="wrap">
-		<div class="header sub_header">
-			<h1>출하관리</h1>
+		<div class="sub-header">
+			<div class="header-nav">
+				<div class="btnSet text-start">
+					<button type="button" onclick="goBack();" class="btn btn-prev">뒤로</button>
+				</div>
+	
+				<div class="btnSet">
+					<button type="button" class="btn btn-home"><span>홈</span></button>
+				</div>
+	
+				<div class="btnSet text-end">
+					<button type="button" class="btn btn-next" data-bs-toggle="modal" data-bs-target="#exampleModal">로그아웃</button>
+				</div>
+			</div>
+			<div class="tit-header">
+				<h1>출하관리</h1>
+			</div>
 		</div>
 		<div class="container">
 			<div class="content">
@@ -128,19 +143,22 @@
 			</div><!-- //content -->
 		</div><!-- //container -->
 		<footer>
-			<div class="btn_footer">
-				<div class="btnSet text-start">
-					<button type="button" onclick="goBack();" class="btn btn-prev">뒤로</button>
-				</div>
-
-				<div class="btnSet">
-					<button type="button" class="btn btn-home"><span>홈</span></button>
-				</div>
-
-				<div class="btnSet text-end">
-					<button type="button" class="btn btn-next" data-bs-toggle="modal" data-bs-target="#exampleModal">로그아웃</button>
+			<div class="footer-nav">
+				<div class="btn-footer">
+					<div class="btnSet text-start">
+						<button type="button" onclick="goBack();" class="btn btn-prev">뒤로</button>
+					</div>
+	
+					<div class="btnSet">
+						<button type="button" class="btn btn-home"><span>홈</span></button>
+					</div>
+	
+					<div class="btnSet text-end">
+						<button type="button" class="btn btn-next" data-bs-toggle="modal" data-bs-target="#exampleModal">로그아웃</button>
+					</div>
 				</div>
 			</div>
+			
 			<div class="banner">banner area</div>
 		</footer><!-- //footer -->
 	</div>
