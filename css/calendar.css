@@ -675,8 +675,8 @@ table.fc-header {
   min-width: 19px;
   padding: 6px;
   text-align: center;
-  width: 30px;
-  height: 30px;
+  /* width: 30px;
+  height: 30px; */
 }
 .fc-sun,
 .fc-sat {
