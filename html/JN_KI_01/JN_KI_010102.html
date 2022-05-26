@@ -47,7 +47,10 @@
 									const myChart01 = new Chart(ctx01, {
 										type: 'doughnut',
 										data: {
-											labels:true,
+											labels: [
+												'',
+												'',
+											],
 											datasets: [{
 												data: [35, 65],      // 금일 작업 이행율, 총 작업 이행율 
 												backgroundColor: [
@@ -84,8 +87,8 @@
 										type: 'doughnut',
 										data: {
 											labels: [
-												'전일 작업 이행율',
-												'남은 이행율',
+												'',
+												'',
 											],
 											datasets: [{
 												data: [85, 15],      // 전일 작업 이행율, 총 작업 이행율 
