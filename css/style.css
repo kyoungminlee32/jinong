@@ -556,10 +556,6 @@ footer .banner {
   letter-spacing: -.05rem;
 }
 
-.chart-wrap > div + div {
-  width: 11rem;
-}
-
 .chart-wrap p {
   color: #222;
   font-size: 1.5rem;
@@ -1045,10 +1041,6 @@ footer .banner {
   .chart-wrap > div {
       padding-top: 2rem;
       width: 15rem;
-  }
-
-  .chart-wrap > div + div {
-      width: 13rem;
   }
 
   .item-scroll {
