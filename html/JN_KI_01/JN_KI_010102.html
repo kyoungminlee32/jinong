@@ -48,8 +48,8 @@
 										type: 'doughnut',
 										data: {
 											labels: [
-												'',
-												'',
+												'금일 작업 이행율',
+												'남은 이행율',
 											],
 											datasets: [{
 												data: [35, 65],      // 금일 작업 이행율, 총 작업 이행율 
@@ -72,6 +72,9 @@
 													bottom: 0,
 												}
 											},
+											legend: {
+												display: false
+											},
 											responsive: true,
 											cutoutPercentage:65 // 도넛 안쪼 원 굵기
 										}
@@ -87,8 +90,8 @@
 										type: 'doughnut',
 										data: {
 											labels: [
-												'',
-												'',
+												'전일 작업 이행율',
+												'남은 이행율',
 											],
 											datasets: [{
 												data: [85, 15],      // 전일 작업 이행율, 총 작업 이행율 
@@ -110,6 +113,9 @@
 													top: 0,
 													bottom: 0,
 												}
+											},
+											legend: {
+												display: false
 											},
 											responsive: true,
 											cutoutPercentage:65 // 도넛 안쪼 원 굵기
