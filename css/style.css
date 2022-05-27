@@ -222,7 +222,7 @@ a {
   margin: 0;
 }
 
-.from-box {
+.form-box {
   width: 30rem;
   margin: 0 auto;
 }
@@ -329,22 +329,22 @@ footer .btnSet .btn {
   margin: 0;
 }
 
-.from-box {
+.form-box {
   width: 30rem;
   margin: 0 auto;
 }
 
-.from-box .form-group {
+.form-box .form-group {
   margin-bottom: 1.2rem;
 }
 
-.from-box label {
+.form-box label {
   font-size: 1.5rem;
   font-weight: 500;
   color: #222;
 }
 
-.from-box input {
+.form-box input {
   height: 4rem;
   font-size: 1.5rem;
   margin: .65rem 0;
@@ -354,7 +354,7 @@ footer .btnSet .btn {
   background-color: #f6f6f6;
 }
 
-.from-box .form-text {
+.form-box .form-text {
   font-size: 1.3rem;
   color: #f00 !important;
 }
@@ -836,10 +836,10 @@ footer .banner {
 .form-select-box {
   padding-top:1rem;
 }
-.from-box select {
+.form-box select {
   display:none;
 }
-.from-box .form-select {
+.form-box .form-select {
   color: #222;
   font-size: 1.5rem;
   line-height: 4rem;
@@ -850,46 +850,46 @@ footer .banner {
   -webkit-appearance: none;
   overflow:hidden
 }
-.from-box .form-select .accordion-item{
+.form-box .form-select .accordion-item{
   border:none;
   border-radius:none;
 }
-.from-box .form-select button{
+.form-box .form-select button{
   padding:1.6rem;
   color:#222;
   font-size:1.5rem;
 }
-.from-box .form-select button:after{
+.form-box .form-select button:after{
   background: url('../images/common/icon_select_form_down.png') no-repeat right 0 center;
   background-size: 1.2rem .8rem;
 }
-.from-box .form-select .accordion-button:not(.collapsed){
+.form-box .form-select .accordion-button:not(.collapsed){
   background-color:#fff;
   box-shadow: 0 5px 7.5px 0 rgba(0, 0, 0, 0.08) !important;
   border-bottom: solid .1rem #ddd;
   
 }
-.from-box .form-select .accordion-button:focus{
+.form-box .form-select .accordion-button:focus{
   border-color:#ddd;
   box-shadow:none;
 }
-.from-box .form-select .accordion-body{
+.form-box .form-select .accordion-body{
   padding:0;
 }
-.from-box .form-select ul{
+.form-box .form-select ul{
   padding:0;
   margin:0;
 }
-.from-box .form-select ul li + li {
+.form-box .form-select ul li + li {
   border-top:.1rem solid #ddd;
 }
-.from-box .form-select ul li{
+.form-box .form-select ul li{
   font-size:1.5rem;
   color:#222;
   font-weight:500;
   padding:.5rem;
 }
-.from-box .form-select ul li:hover{
+.form-box .form-select ul li:hover{
   background-color:#e8fbfc;
 }
 .card-list{
