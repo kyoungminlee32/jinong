@@ -1047,9 +1047,11 @@ footer .banner {
   .header-nav {
       display: none;
   }
-
+  .container{
+    max-width: inherit !important;
+  }   
   .content .inner {
-    padding: 0;
+    padding: 0 4rem;
     background-color: #fff;
   }
 
@@ -1057,6 +1059,9 @@ footer .banner {
       display: block;
   }
 
+  footer .btn-footer {
+    padding: 1.7rem 4rem;
+  }
   footer .btn_footer {
       display:block;
       padding: 1.7rem 3.4rem;
