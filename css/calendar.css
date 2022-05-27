@@ -2,7 +2,7 @@
 
 #calendar {
   /* 		float: right; */
-  margin: 5rem auto;
+  margin: 3rem auto 5rem;
   /* background-color: #FFFFFF;
   border-radius:1.5rem;
   box-shadow: 0 1px 2px #C3C3C3;
@@ -32,7 +32,7 @@ td.fc-today {
 }
 .fc-first th {
   color: #222;
-  font-size: 2rem !important;
+  font-size: 1.5rem !important;
   line-height:4.8rem !important;
   font-weight: 500 !important;
   border-top:transparent;
@@ -71,7 +71,7 @@ html .fc,
 
 .fc-header td {
   white-space: nowrap;
-  padding: 50px 10px 50px;
+  padding: 20px 10px 20px;
   
 }
 
@@ -675,8 +675,8 @@ table.fc-header {
   min-width: 19px;
   padding: 6px;
   text-align: center;
-  width: 40px;
-  height: 40px;
+  width: 30px;
+  height: 30px;
 }
 .fc-sun,
 .fc-sat {
