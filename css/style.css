@@ -834,7 +834,18 @@ footer .banner {
 }
 
 .form-select-box {
+  position:relative;
   padding-top:1rem;
+  padding-right:17rem;
+}
+.form-select-box .form-box{
+  width:auto;
+}
+.form-select-box .btnSet{
+  position:absolute;
+  right:0;
+  top:50%;
+  transform:translateY(-50%);
 }
 .form-box select {
   display:none;
@@ -1023,7 +1034,7 @@ footer .banner {
 
   .content .inner {
     padding: 0;
-    background-color: #fff;5rem
+    background-color: #fff;
   }
 
   footer .footer-nav {
