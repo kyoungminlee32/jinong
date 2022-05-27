@@ -5,10 +5,11 @@ function goBack(){
 $( document ).ready(function(){
 	$(".table-work .form-check-input").on({
 		change:function(e){
-			$(this).parents(".table-work tr").toggleClass('bg-info02');
+			$(this).parents(".table-work tbody tr").toggleClass('bg-info02');
 		}
 	});
 });
+
 
 /*!
  * FullCalendar v1.6.4

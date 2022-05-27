@@ -737,12 +737,17 @@ footer .banner {
   background-color: #f8f8f8 !important;
 }
 
-.table-basic table {
-  width: 64rem;
+.table-mobile-type01 {
+  width: 34rem !important;
   margin: 0;
 }
-.table-work table {
-  width: 64rem;
+.table-mobile-type02 {
+  width: 44rem !important;
+  margin: 0;
+}
+.table-mobile-type03 {
+  width: 60rem !important;
+  margin: 0;
 }
 .table-basic table>:not(:first-child) {
   border-top: none;
@@ -752,7 +757,7 @@ footer .banner {
   text-align: center;
   border: none;
   font-size: 1.4rem;
-  padding: 1.2rem;
+  padding: 1.2rem 0;
   vertical-align: middle;
 }
 .table-basic tbody tr:nth-child(2n){
@@ -775,7 +780,7 @@ footer .banner {
 .table-basic thead label, .table-basic tbody label {
   position: absolute;
   left: -999rem;
-  font-size: 0;card
+  font-size: 0;
   line-height: 0;
   width: .1rem;
   height: .1rem;
@@ -986,7 +991,7 @@ footer .banner {
 
 @media (min-width: 1080px) {
   html {
-      zoom:260%;
+      font-size:100%;
   }
 
   .header {
@@ -1017,8 +1022,8 @@ footer .banner {
   }
 
   .content .inner {
-    padding: 0 5rem;
-    background-color: #fff;
+    padding: 0;
+    background-color: #fff;5rem
   }
 
   footer .footer-nav {
@@ -1058,8 +1063,8 @@ footer .banner {
     margin-top:5rem;
     margin-bottom:10rem;
   }
-  .table-basic table {
+  /* .table-basic table {
     width: 64rem;
     margin: 0;
-  }
+  } */
 }
