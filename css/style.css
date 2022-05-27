@@ -141,21 +141,31 @@ a {
 }
 
 .header {
-  height: 10rem;
-  display: flex;
-  justify-content: space-between;
-  align-items:center;
+  position: fixed;
+  top:0;
+  z-index:1000;
   width: 100%;
   background-color: #126b75;
   text-align: center;
   border-radius: 0 0 3.5rem 0;
 }
 
-.header.bg {
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items:center;
+  width: 100%;
+  height:12.5rem;
+  background-color: #126b75;
+  text-align: center;
+  border-radius: 0 0 3.5rem 0;
+}
+
+.header .bg {
   position: relative;
 }
 
-.header.bg:before {
+.header .bg:before {
   content: '';
   display: block;
   position: absolute;
@@ -201,6 +211,9 @@ a {
   display: none;
 }
 
+.header + .container .content {
+  padding: 26rem 0 0 !important;
+}
 .sub-header + .container .content {
   padding: 13.5rem 0 0 !important;
 }
@@ -1008,17 +1021,20 @@ footer .banner {
   .header {
       height: 12.5rem
   }
+  .header .bg:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 12.5rem;
+    background: url('../images/common/farmimg.png') no-repeat -1rem .2rem;
+    background-size: 16rem 16rem;
+  }
 
-  .header.bg:before {
-      content: '';
-      display: block;
-      position: absolute;
-      left: 0;
-      bottom: 0;
-      width: 100%;
-      height: 12.5rem;
-      background: url('../images/common/farmimg.png') no-repeat -1rem 2rem;
-      background-size: 13rem 13rem;
+  .header + .container .content {
+    padding: 20rem 0 0 !important;
   }
 
   .sub-header + .container .content {
@@ -1042,6 +1058,7 @@ footer .banner {
   }
 
   footer .btn_footer {
+      display:block;
       padding: 1.7rem 3.4rem;
   }
 
