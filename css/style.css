@@ -1073,7 +1073,7 @@ footer .banner {
   background: url('../images/common/ico_item_04.png') no-repeat center 2.6rem;
   background-size: 6rem auto;
 }
-
+.card-list .end {opacity:.5;}
 .card-list .col a {
   display: block;
   color: #fff;
