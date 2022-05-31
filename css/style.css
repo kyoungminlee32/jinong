@@ -270,7 +270,7 @@ a {
   border-radius: 0;
   border-bottom:0.1rem solid #e6e9f4;
 }
-.mobile-header .tit-header{background-color:#fff;}
+.mobile-header .tit-header{background-color:#fff;height:auto;}
 .mobile-header h1{color:#222;}
 .sub-header.mobile-header{background:transparent;}
 .sub-header.mobile-header .tit-header h1{
