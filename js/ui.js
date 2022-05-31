@@ -20,3 +20,14 @@ $(window).resize(function(){
 		$('.header,.sub-header').addClass('mobil-header');
 	}        
 });
+
+$(document).ready(function(){
+
+	if ($(window).width() >= 1080) {  
+		$('.header,.sub-header').removeClass('mobil-header');
+	}  
+	   
+	if ($(window).width() < 1080) {  
+		$('.header,.sub-header').addClass('mobil-header');
+	}        
+});
