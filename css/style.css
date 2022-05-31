@@ -135,6 +135,13 @@ a {
   -webkit-overflow-scrolling: touch
 }
 
+.blind {
+  font-size: 0;
+  line-height: 0;
+  width: .1rem;
+  height: .1rem;
+  margin-top: -.1rem;
+}
 /* Layout */
 .wrap {
   height: 100%;
@@ -198,6 +205,83 @@ a {
   text-align: center;
 }
 
+.mobil-header .header-nav{
+  background-color: #126b75;
+  padding:1.2rem 2.4rem;
+  position:relative;
+}
+.mobil-header .btnSet .btn-prev,
+.mobil-header .btnSet .btn-next{
+  background:transparent;
+  border-radius:0;
+  border:none;
+  padding:0;
+  width:3.6rem;
+  height:3.6rem;
+}
+.mobil-header .btnSet .btn-prev:before{
+  left:0;
+  width:3.6rem;
+  height:3.6rem;
+  background: url(../images/common/ico_prev.png) no-repeat 0 0;
+  background-size:3.6rem 3.6rem;
+}
+.mobil-header .btnSet .btn-next{
+  position:relative;
+  color:#fff;
+  font-size:1.3rem;
+  line-height:3.6rem;
+  width:auto;
+  padding-right:3.6rem;
+}
+.mobil-header .btnSet .btn-next:before{
+  content:'';
+  position:absolute;
+  right:0;
+  width:3.6rem;
+  height:3.6rem;
+  background: url(../images/common/ico_logout.png) no-repeat 0 0;
+  background-size:3.6rem 3.6rem;
+}
+.mobil-header .btnSet .btn-home{
+  position:absolute;
+  left:50%;
+  top:50%;
+  transform:translate(-50%,-50%);
+  background:transparent;
+  line-height: 3.6rem;
+  width:auto;
+  height:auto;
+  padding:0;
+  border:none;
+}
+.mobil-header .btnSet .btn-home span {
+  position: relative;
+  font-size: 1.8rem;
+  line-height: 3.6rem;
+  width:auto;
+  height:auto;
+  margin-top:0;
+  font-weight:500;
+}
+.mobil-header .btnSet .btn-home span:before{
+  background:none;
+}
+.mobil-header .main-header{
+  background-color:#fff;
+  border-radius: 0;
+  border-bottom:0.1rem solid #e6e9f4;
+}
+.mobil-header h1{color:#222;}
+.sub-header.mobil-header{background:transparent;}
+.sub-header.mobil-header .tit-header h1{
+  color:#222;
+  padding:1.9rem 0;
+  border-bottom:0.1rem solid #e6e9f4;
+}
+.sub-header.mobil-header + .container .content {
+  padding: 16.5rem 0 0 !important;
+}
 .container {
   padding: 0 !important;
   min-height: 100%;
@@ -212,7 +296,7 @@ a {
 }
 
 .header + .container .content {
-  padding: 26rem 0 0 !important;
+  padding: 24rem 0 0 !important;
 }
 
 .sub-header + .container .content {
@@ -253,6 +337,7 @@ a {
   color: #fff;
   margin: 0;
   font-size: 2rem;
+  border:none;
 }
 
 .content .inner {
@@ -979,7 +1064,12 @@ footer .banner {
   background-color: #799ddb;
 }
 
-; .card-list .col a {
+.card-list .item04 span:before {
+  background: url('../images/common/ico_item_04.png') no-repeat center 2.6rem;
+  background-size: 6rem auto;
+}
+
+.card-list .col a {
   display: block;
   color: #fff;
   font-size: 1.8rem;

@@ -9,3 +9,14 @@ $( document ).ready(function(){
 		}
 	});
 });
+
+$(window).resize(function(){
+
+	if ($(window).width() >= 1080) {  
+		$('.header,.sub-header').removeClass('mobil-header');
+	}  
+	   
+	if ($(window).width() < 1080) {  
+		$('.header,.sub-header').addClass('mobil-header');
+	}        
+});
