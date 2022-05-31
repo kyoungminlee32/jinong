@@ -13,21 +13,21 @@ $( document ).ready(function(){
 $(window).resize(function(){
 
 	if ($(window).width() >= 1080) {  
-		$('.header,.sub-header').removeClass('mobil-header');
+		$('.header,.sub-header').removeClass('mobile-header');
 	}  
 	   
 	if ($(window).width() < 1080) {  
-		$('.header,.sub-header').addClass('mobil-header');
+		$('.header,.sub-header').addClass('mobile-header');
 	}        
 });
 
 $(document).ready(function(){
 
 	if ($(window).width() >= 1080) {  
-		$('.header,.sub-header').removeClass('mobil-header');
+		$('.header,.sub-header').removeClass('mobile-header');
 	}  
 	   
 	if ($(window).width() < 1080) {  
-		$('.header,.sub-header').addClass('mobil-header');
+		$('.header,.sub-header').addClass('mobile-header');
 	}        
 });

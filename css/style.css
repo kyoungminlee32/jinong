@@ -203,13 +203,13 @@ a {
   text-align: center;
 }
 
-.mobil-header .header-nav{
+.mobile-header .header-nav{
   background-color: #126b75;
   padding:1.2rem 2.4rem;
   position:relative;
 }
-.mobil-header .btnSet .btn-prev,
-.mobil-header .btnSet .btn-next{
+.mobile-header .btnSet .btn-prev,
+.mobile-header .btnSet .btn-next{
   background:transparent;
   border-radius:0;
   border:none;
@@ -217,14 +217,14 @@ a {
   width:3.6rem;
   height:3.6rem;
 }
-.mobil-header .btnSet .btn-prev:before{
+.mobile-header .btnSet .btn-prev:before{
   left:0;
   width:3.6rem;
   height:3.6rem;
   background: url(../images/common/ico_prev.png) no-repeat 0 0;
   background-size:3.6rem 3.6rem;
 }
-.mobil-header .btnSet .btn-next{
+.mobile-header .btnSet .btn-next{
   position:relative;
   color:#fff;
   font-size:1.3rem;
@@ -232,7 +232,7 @@ a {
   width:auto;
   padding-right:3.6rem;
 }
-.mobil-header .btnSet .btn-next:before{
+.mobile-header .btnSet .btn-next:before{
   content:'';
   position:absolute;
   right:0;
@@ -241,7 +241,7 @@ a {
   background: url(../images/common/ico_logout.png) no-repeat 0 0;
   background-size:3.6rem 3.6rem;
 }
-.mobil-header .btnSet .btn-home{
+.mobile-header .btnSet .btn-home{
   position:absolute;
   left:50%;
   top:50%;
@@ -253,7 +253,7 @@ a {
   padding:0;
   border:none;
 }
-.mobil-header .btnSet .btn-home span {
+.mobile-header .btnSet .btn-home span {
   position: relative;
   font-size: 1.8rem;
   line-height: 3.6rem;
@@ -262,22 +262,23 @@ a {
   margin-top:0;
   font-weight:500;
 }
-.mobil-header .btnSet .btn-home span:before{
+.mobile-header .btnSet .btn-home span:before{
   background:none;
 }
-.mobil-header .main-header{
+.mobile-header .main-header{
   background-color:#fff;
   border-radius: 0;
   border-bottom:0.1rem solid #e6e9f4;
 }
-.mobil-header h1{color:#222;}
-.sub-header.mobil-header{background:transparent;}
-.sub-header.mobil-header .tit-header h1{
+.mobile-header .tit-header{background-color:#fff;}
+.mobile-header h1{color:#222;}
+.sub-header.mobile-header{background:transparent;}
+.sub-header.mobile-header .tit-header h1{
   color:#222;
   padding:1.9rem 0;
   border-bottom:0.1rem solid #e6e9f4;
 }
-.sub-header.mobil-header + .container .content {
+.sub-header.mobile-header + .container .content {
   padding: 16.5rem 0 0 !important;
 }
 .container {
@@ -328,6 +329,7 @@ a {
   width: 100%;
   flex-direction: column;
   height: 4.5rem;
+  background-color: #126b75;
 }
 
 .tit-header h1 {
