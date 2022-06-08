@@ -892,17 +892,17 @@ footer .banner {
 }
 
 .table-mobile-type01 {
-  width: 34rem !important;
+  min-width: 34rem !important;
   margin: 0;
 }
 
 .table-mobile-type02 {
-  width: 44rem !important;
+  min-width: 44rem !important;
   margin: 0;
 }
 
 .table-mobile-type03 {
-  width: 60rem !important;
+  min-width: 60rem !important;
   margin: 0;
 }
 
