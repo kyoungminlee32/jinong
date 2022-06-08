@@ -2,6 +2,13 @@ function goBack(){
 	window.history.back();
 }
 
+function selectAll(selectAll)  {
+	const checkboxes = document.getElementsByName('sel_Check');
+	checkboxes.forEach((checkbox) => {
+		checkbox.checked = selectAll.checked;
+	})
+}
+
 $( document ).ready(function(){
 	$(".table-work .form-check-input").on({
 		change:function(e){
