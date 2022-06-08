@@ -958,6 +958,10 @@ footer .banner {
   vertical-align:middle;
 }
 
+.table-basic .form-check .form-check-input[type=radio] {
+  border-radius:.25rem;
+}
+
 .table-basic .form-check .form-check-input {
   width:2rem !important;
   height:2rem !important;
