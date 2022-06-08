@@ -1,0 +1,165 @@
+.wrap_schedule_box {
+  padding: 0 2rem;
+  margin: 1.6rem 0 2.3rem;
+}
+
+.wrap_schedule_box .calendar_month_list {
+  padding: 0;
+}
+
+.wrap_schedule {
+  display: flex;
+  width: 100%;
+}
+
+.wrap_schedule .calendar_area,.wrap_schedule .plan_area {
+  border-radius: 1.5rem;
+  border: solid .1rem #bdbdbd;
+  background-color: #fff;
+}
+
+.wrap_schedule .calendar_area {
+  flex: 1 1 auto;
+  width: 100%;
+}
+
+.wrap_schedule .plan_area {
+  flex: 0 0 32rem;
+  margin-left: 1.5rem;
+  padding: 2.5rem 1.8rem 1rem 1.8rem
+}
+
+.wrap_calendar .swiper {
+  height: auto;
+}
+
+.wrap_calendar .swiper-button-next, .wrap_calendar .swiper-button-prev {
+  top: 0;
+  margin: 0;
+  width: 6rem;
+  height: 6rem;
+  background: no-repeat center #fff;
+  background-size: 2.4rem;
+}
+
+.wrap_calendar .swiper-button-prev {
+  left: 50%;
+  margin-left: -14rem;
+  background-image: url('../images/common/icon_calendar_prev.png');
+}
+
+.wrap_calendar .swiper-button-next {
+  right: 50%;
+  margin-right: -14rem;
+  background-image: url('../images/common/icon_calendar_next.png');
+}
+
+.wrap_calendar .swiper-button-next:after, .wrap_calendar .swiper-button-prev:after {
+  display: none;
+}
+
+.calendar_header_current {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  height: 6rem;
+  line-height: 6rem;
+}
+
+.calendar_month_list > li {
+  display: flex;
+}
+
+.calendar_month_list > li + li {
+  border-top: solid .1rem #ccc;
+}
+
+.calendar_month_list > li .week_day {
+  flex: 1;
+  text-align: center;
+  height: 4.8rem;
+  line-height: 4.8rem;
+  color: #000;
+  font-size: 1.7rem;
+}
+
+.calendar_month_list > li .week_day:first-child {
+  color: #e00900
+}
+
+.calendar_month_list > li .week_day:last-child {
+  color: #2a67a9
+}
+
+.calendar_month_list > li .month_day {
+  flex: 1;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 0 .2rem;
+  height: 9rem;
+}
+
+.calendar_month_list > li .month_day + .month_day {
+  border-left: solid .1rem #ccc;
+}
+
+.calendar_month_list > li .month_day .day {
+  font-size: 1.7rem;
+  color: #555;
+  height: 4.8rem;
+  line-height: 4.8rem;
+  text-align: left;
+  padding-left: .8rem
+}
+
+.calendar_month_list > li .month_day .day.other_day {
+  color: #ccc !important;
+}
+
+.calendar_month_list > li .month_day:first-child .day {
+  color: #e00900;
+}
+
+.calendar_month_list > li .month_day:last-child .day {
+  color: #2a67a9;
+}
+
+.calendar_month_list > li .month_day > span {
+  width: 100%
+}
+
+.calendar_month_list > li .month_day > span.work_plan {
+  line-height: 1.7rem;
+}
+
+.calendar_month_list > li .month_day > span.work_plan > strong {
+  border-radius: 2rem;
+  display: inline-block;
+  width: 4.5rem;
+  font-size: 1.4rem;
+  font-weight: normal;
+  margin-right: .5rem;
+}
+
+.calendar_month_list > li .month_day > span.work_plan > span {
+  line-height: 1.7rem;
+}
+
+.calendar_month_list > li .month_day > span.work_plan.visit > strong {
+  background-color: #4e71a0;
+  color: #fff
+}
+
+.calendar_month_list > li .month_day > span.work_plan.visit > span {
+  color: #53b0ae;
+}
+
+.calendar_month_list > li .month_day > span.work_plan.normal > strong {
+  background-color: #ddeae5;
+  color: #222
+}
+
+.calendar_month_list > li .month_day > span.work_plan.normal > span {
+  color: #444;
+}
