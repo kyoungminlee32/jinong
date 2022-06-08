@@ -914,7 +914,7 @@ footer .banner {
   text-align: center;
   border: none;
   font-size: 1.4rem;
-  padding: 1.2rem 0;
+  padding: 1.4rem 0;
   vertical-align: middle;
 }
 
@@ -955,9 +955,12 @@ footer .banner {
   display: inline-block;
   padding: 0;
   margin: 0;
+  vertical-align:middle;
 }
 
 .table-basic .form-check .form-check-input {
+  width:2rem !important;
+  height:2rem !important;
   margin: 0;
   border-color: #d9d9d9;
 }
