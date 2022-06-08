@@ -1127,7 +1127,7 @@ footer .banner {
 
 .card-list .item02 span:before {
   background: url('../images/common/ico_item_02.png') no-repeat center 2.6rem;
-  background-size: 6rem auto;
+  background-size: 5rem auto;
 }
 
 .card-list .item03 {
@@ -1136,7 +1136,7 @@ footer .banner {
 
 .card-list .item03 span:before {
   background: url('../images/common/ico_item_03.png') no-repeat center 2.6rem;
-  background-size: 6rem auto;
+  background-size: 5.5rem auto;
 }
 
 .card-list .item04 {
